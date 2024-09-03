@@ -23,11 +23,9 @@ header {
     background-color: #111;
 }
 
-.logo h1 {
-    color: hsl(65, 100%, 50%);
-    font-size: 24px;
-    margin: 0;
-}
+/* .logo  {
+    
+} */
 
 nav ul {
     list-style-type: none;
