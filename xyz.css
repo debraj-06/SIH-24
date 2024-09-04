@@ -1,3 +1,4 @@
+/* Base Styles */
 .b {
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@
     color: #fff;
     background: linear-gradient(#008080, rgba(255, 255, 255, 0.5)), url('newback.jpg');
 }
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -22,34 +24,12 @@ header {
     background-color: #000000;
 }
 
-.logo {
-    margin-left: 10px;
+.logo  {
     margin-right: 100px;
     width: 30px;
     height: 10px;
     border-radius: 20px;
 }
-
-/* For screens that are 768px wide or less */
-@media (max-width: 768px) {
-    .logo {
-        margin-left: 5px;
-        margin-right: 50px;
-        width: 25px;
-        height: 8px;
-    }
-}
-
-/* For screens that are 480px wide or less */
-@media (max-width: 480px) {
-    .logo {
-        margin-left: 2px;
-        margin-right: 20px;
-        width: 20px;
-        height: 6px;
-    }
-}
-
 
 nav ul {
     list-style-type: none;
@@ -72,40 +52,6 @@ nav ul li a.active, nav ul li a:hover {
     color: hsl(0, 0%, 100%);
 }
 
-/* For screens that are 768px wide or less */
-@media (max-width: 1600px) {
-    nav ul {
-        flex-direction: row;
-        align-items: flex-start;
-
-    }
-
-    nav ul li {
-        margin-left: 0;
-        margin-bottom: 10px;
-        gap: 20px;
-    }
-}
-
-/* For screens that are 480px wide or less */
-@media (max-width: 1600px) {
-    nav ul {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-
-    nav ul li {
-        margin-left: 0;
-        margin-bottom: 5px;
-        gap: 20px;
-    }
-
-    nav ul li a {
-        font-size: 14px;
-        margin-left: 15px;
-    }
-}
-
 .hero {
     background: url('hero-image.jpg') no-repeat center center/cover;
     height: 600px;
@@ -120,40 +66,30 @@ nav ul li a.active, nav ul li a:hover {
     color: #d9ff00;
     font-size: 48px;
     margin: 10px;
-    font-family: monaco,Consolas,Lucida Console,monospace;
+    font-family: monaco, Consolas, Lucida Console, monospace;
     text-shadow: 5px 5px 10px black;
-  
 }
 
 .hero-content h1 {
-    /* font-size: 72px;
-    margin: 10px 0;
-    text-shadow: 5px 5px 10px black;
-    padding: 10px 10px;
-    font-family: Tahoma, Verdana, sans-serif; */
-    /* font-weight: bold; */
     font-family: 'Bahnschrift', sans-serif;
     font-size: 72px;
     font-weight: bold;
     position: relative;
-padding: 10px 10px;
-margin: 10px 0;
-text-shadow: 5px 5px 10px black;
-
+    padding: 10px 10px;
+    margin: 10px 0;
+    text-shadow: 5px 5px 10px black;
 }
 
 .hero-content .btn {
     margin: 0 auto;
     padding: 15px 30px;
-    background:linear-gradient(90deg, #2244aa,rgb(4, 38, 107));
+    background: linear-gradient(90deg, #2244aa, rgb(4, 38, 107));
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     box-shadow: 5px 5px 10px black;
     border-radius: 20px;
-    
 }
-
 
 .features {
     display: flex;
@@ -163,7 +99,6 @@ text-shadow: 5px 5px 10px black;
     background-color: #000000;
     padding: 20px 0;
     padding-top: 30px;
-   
 }
 
 .feature {
@@ -175,89 +110,172 @@ text-shadow: 5px 5px 10px black;
     border-radius: 5px;
     transition: transform .2s;
     position: relative;
-    
-    
 }
+
 .feature:hover {
     transform: scale(1.1);
     box-shadow: 0 5px 15px #00dcec;
-   }
+}
 
-.rd{
+.rd {
     padding: 25px;
     transition: transform .2s;
-
 }
+
 .rd:hover {
     transform: scale(1.2);
-    
-   }
- 
+}
 
-   html {
-    scroll-behavior: smooth;
-  }
-  .jpg{
+.jpg {
     width: 250px;
     height: 200px;
     opacity: 0.5;
-  
-    
-  }
-  .txt{
+}
+
+.txt {
     position: absolute;
-    left:50%;
-    top:50%;
-    transform: translate(-50%,-50%);
-    color:#fff;
-    
-  }
-  #userLogo{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+#userLogo {
     width: 30px;
-   
     height: auto;
-  }
-  #right {
+}
+
+#right {
     padding-left: 550px;
-    justify-content: left;
+    justify-content: right;
     margin-left: 450px;
 }
 
-/* For screens that are 768px wide or less */
-@media (max-width: 768px) {
-    #right {
-        padding-left: 50px;
-        margin-left: 0;
-    }
-}
-
-/* For screens that are 480px wide or less */
-@media (max-width: 480px) {
-    #right {
-        padding-left: 20px;
-        margin-left: 0;
-    }
-}
-
-  .log{
+.log {
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: #000000;
     text-align: center;
-    color:#eeff00 ;
-   
-    
-  }
-  #sign{
+    color: #eeff00;
+}
+
+#sign {
     background-color: #d0ff00;
     width: 60px;
     height: 30px;
     margin-left: 10px;
     border-radius: 20px;
-   box-shadow: #00f7ff;
-   
-  }
-.bkimg{
+    box-shadow: #00f7ff;
+}
+
+.bkimg {
     opacity: 0.2;
     width: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .container {
+        padding: 20px;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .logo {
+       margin-left: 0px;
+       padding-left: 0px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 56px;
+    }
+
+    .hero-content h2 {
+        font-size: 36px;
+    }
+
+    .features {
+        flex-direction: row;
+    }
+
+    .feature {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #right {
+        padding-left: 220px;
+        margin-left: 220px;
+        gap: 3px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .features {
+        flex-direction: row;
+    }
+
+    .feature {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content h2 {
+        font-size: 24px;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .features {
+        padding: 10px 0;
+    }
+
+    .feature {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
