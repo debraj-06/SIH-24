@@ -1,3 +1,4 @@
+
 .b {
     margin: 0;
     padding: 0;
@@ -15,21 +16,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 20px 20px;
 }
 
 header {
     background-color: #000000;
+    display: flex;
 }
 
 .logo  {
     margin-left: -25px;
     margin-right: 100px;
-    width: 30px;
-    height: 10px;
+    width: 20px;
+    height: 40px;
     margin-left: 10px;
     border-radius: 20px;
-
+   display: flex;
+   margin-top: 20px;
 
 }
 
@@ -42,16 +45,20 @@ nav ul {
 
 nav ul li {
     margin-left: 20px;
+    display: flex;
 }
 
 nav ul li a {
     color: hsl(65, 100%, 50%);
     text-decoration: none;
     font-weight: bold;
+    display: flex;
+    margin-bottom: 25px;
 }
 
 nav ul li a.active, nav ul li a:hover {
     color: hsl(0, 0%, 100%);
+    display: flex;
 }
 
 .hero {
@@ -168,7 +175,7 @@ text-shadow: 5px 5px 10px black;
   #right{
     padding-left: 550px;
     justify-content: left;
-    margin-left: 450px;
+    margin-left: 150px;
   }
   .log{
     padding-top: 50px;
@@ -186,6 +193,7 @@ text-shadow: 5px 5px 10px black;
     margin-left: 10px;
     border-radius: 20px;
    box-shadow: #00f7ff;
+   margin-top: -25px;
    
   }
 .bkimg{
