@@ -11,18 +11,39 @@
     color: #fff;
     background: linear-gradient(#008080, rgba(255, 255, 255, 0.5)), url('newback.jpg');
 }
+/* .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px; */
+    /* edit for fixed navbar */
+    /* position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000000;
+    z-index: 1000; 
+} */
+/* Initial Navbar Style */
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    /* edit for fixed navbar */
-    position: fixed;
+    position: fixed; /* Makes the navbar fixed */
     top: 0;
     width: 100%;
-    background-color: #000000;
-    z-index: 1000; 
+    background-color: #000000; /* Change as needed */
+    z-index: 1000;
+    transition: padding 0.3s ease; /* Smooth shrinking transition */
 }
+
+/* Shrink version of the navbar */
+.container.shrink {
+    padding: 10px 50px; /* Reduced padding when scrolled */
+    background-color: rgba(0, 0, 0, 0.9); /* Optional: make background a bit transparent when shrinking */
+}
+
+
 
 header {
     background-color: #000000;
