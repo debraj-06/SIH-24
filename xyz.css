@@ -11,39 +11,26 @@
     color: #fff;
     background: linear-gradient(#008080, rgba(255, 255, 255, 0.5)), url('newback.jpg');
 }
-/* .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px; */
-    /* edit for fixed navbar */
-    /* position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #000000;
-    z-index: 1000; 
-} */
-/* Initial Navbar Style */
+
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    position: fixed; /* Makes the navbar fixed */
+    position: fixed; 
     top: 0;
     width: 100%;
-    background-color: #000000; /* Change as needed */
+    background-color: #000000; 
     z-index: 1000;
-    transition: padding 0.3s ease; /* Smooth shrinking transition */
+    transition: padding 0.3s ease;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 /* Shrink version of the navbar */
 .container.shrink {
-    padding: 10px 50px; /* Reduced padding when scrolled */
-    background-color: rgba(0, 0, 0, 0.9); /* Optional: make background a bit transparent when shrinking */
+    padding: 10px 50px; 
+    background-color: rgba(0, 0, 0, 0.9);
 }
-
-
 
 header {
     background-color: #000000;
@@ -58,9 +45,9 @@ header {
     border-radius: 20px;
     padding-block: 20px;
     margin-top: -40px;
-    
 }
-.lgimg{
+
+.lgimg {
     padding-block: -20px;
     padding-inline: -20px;
     width: 200px;
@@ -72,6 +59,7 @@ nav ul {
     display: flex;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap; /* Make the navigation wrap on smaller screens */
 }
 
 nav ul li {
@@ -102,40 +90,30 @@ nav ul li a.active, nav ul li a:hover {
     color: #d9ff00;
     font-size: 48px;
     margin: 10px;
-    font-family: monaco,Consolas,Lucida Console,monospace;
+    font-family: monaco, Consolas, Lucida Console, monospace;
     text-shadow: 5px 5px 10px black;
-  
 }
 
 .hero-content h1 {
-    /* font-size: 72px;
-    margin: 10px 0;
-    text-shadow: 5px 5px 10px black;
-    padding: 10px 10px;
-    font-family: Tahoma, Verdana, sans-serif; */
-    /* font-weight: bold; */
     font-family: 'Bahnschrift', sans-serif;
     font-size: 72px;
     font-weight: bold;
     position: relative;
-padding: 10px 10px;
-margin: 10px 0;
-text-shadow: 5px 5px 10px black;
-
+    padding: 10px 10px;
+    margin: 10px 0;
+    text-shadow: 5px 5px 10px black;
 }
 
 .hero-content .btn {
     margin: 0 auto;
     padding: 15px 30px;
-    background:linear-gradient(90deg, #2244aa,rgb(4, 38, 107));
+    background: linear-gradient(90deg, #2244aa, rgb(4, 38, 107));
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     box-shadow: 5px 5px 10px black;
     border-radius: 20px;
-    
 }
-
 
 .features {
     display: flex;
@@ -145,7 +123,7 @@ text-shadow: 5px 5px 10px black;
     background-color: #000000;
     padding: 20px 0;
     padding-top: 30px;
-   
+    flex-wrap: wrap; /* Allow features to wrap */
 }
 
 .feature {
@@ -157,73 +135,258 @@ text-shadow: 5px 5px 10px black;
     border-radius: 5px;
     transition: transform .2s;
     position: relative;
-    
-    
 }
+
 .feature:hover {
     transform: scale(1.1);
     box-shadow: 0 5px 15px #00dcec;
-   }
+}
 
-.rd{
+.rd {
     padding: 25px;
     transition: transform .2s;
-
 }
+
 .rd:hover {
     transform: scale(1.2);
-    
-   }
- 
+}
 
-   html {
-    scroll-behavior: smooth;
-  }
-  /* sexy */
-  .jpg{
+.jpg {
     width: 250px;
     height: 200px;
     opacity: 0.5;
-  
-    
-  }
-  .txt{
+}
+
+.txt {
     position: absolute;
-    left:50%;
-    top:50%;
-    transform: translate(-50%,-50%);
-    color:#fff;
-    
-  }
-  #userLogo{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+#userLogo {
     width: 30px;
-   
     height: auto;
-  }
-  #right{
+}
+
+#right {
+    display: flex;
+    flex-wrap: wrap;
     padding-left: 550px;
     justify-content: left;
     margin-left: 450px;
-  }
-  .log{
+}
+
+.log {
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: #000000;
     text-align: center;
-    color:#eeff00 ;
-   
-    
-  }
-  #sign{
+    color: #eeff00;
+}
+
+#sign {
     background-color: #d0ff00;
     width: 60px;
     height: 30px;
     margin-left: 10px;
     border-radius: 20px;
-   box-shadow: #00f7ff;
-   
-  }
-.bkimg{
+    box-shadow: 0 0 10px #00f7ff;
+}
+
+.bkimg {
     opacity: 0.2;
     width: 10px;
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px 20px; /* Reduce padding on smaller screens */
+      
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    nav ul {
+        flex-direction: row; /* Stack navigation items vertically */
+        align-items: center;
+    }
+
+    .hero {
+        height: 400px; /* Adjust hero section height */
+    }
+
+    .hero-content h1 {
+        font-size: 48px; /* Reduce heading size */
+    }
+
+    .hero-content h2 {
+        font-size: 24px;
+    }
+
+    .features {
+        flex-direction: column; /* Stack features vertically */
+        padding: 10px;
+    }
+
+    .feature {
+        width: 80%; /* Reduce feature width */
+        margin: 10px 0;
+    }
+
+    #right {
+        padding-left: 0;
+        margin-left: 200px;
+        justify-content: center;
+
+    }
+
+    .log {
+        padding: 20px 0;
+    }
+
+    #sign {
+        width: 100%; /* Make sign button full width on smaller screens */
+        margin-left: 0;
+}
+}
+
+
+
+/* For screens up to 1440px */
+@media screen and (max-width: 1440px) {
+    .container {
+        padding: 5px 40px; /* Slightly increase padding on larger screens */
+        height: 15%;
+    }
+
+    .logo {
+        margin: 20px; /* Center logo on larger screens */
+       margin-top: -30px;
+    }
+
+    nav ul {
+        flex-direction: row; /* Keep navigation items horizontal */
+        justify-content: space-between; /* Spread them out */
+    }
+
+    .hero {
+        height: 600px; /* Increase hero section height for larger screens */
+    }
+
+    .hero-content h1 {
+        font-size: 64px; /* Increase heading size */
+    }
+
+    .hero-content h2 {
+        font-size: 36px;
+    }
+
+    .features {
+        flex-direction: row; /* Align features side by side */
+        padding: 20px;
+    }
+
+    .feature {
+        width: 30%; /* Adjust feature width for a three-column layout */
+        margin: 20px;
+    }
+
+    #right {
+        margin-left: 850px;
+        padding-left: 20px;
+        justify-content: flex-start;
+        padding-bottom: 50px;
+        flex-direction: row;
+    }
+
+    .log {
+        padding: 30px 0;
+    }
+
+    #sign {
+        width: auto; /* Allow sign button to adjust width naturally */
+        margin-left: 20px;
+    }
+    
+.lgimg {
+    padding-block: -20px;
+    padding-inline: -20px;
+    width: 200px;
+    margin-top: 30px;
+}
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 5px 20px; /* Reduce padding for smaller screens */
+        margin-bottom: 100px; /* Adjust height to auto to prevent overflow */
+    }
+
+    .logo {
+        margin: 10px; /* Adjust logo margins for smaller screens */
+        margin-top: -20px;
+    }
+
+    nav ul {
+        flex-direction: row; /* Stack navigation items vertically */
+        justify-content: center;
+        align-items: center; /* Center the navigation items */
+    }
+
+    .hero {
+        height: 400px; /* Reduce hero section height */
+    }
+
+    .hero-content h1 {
+        font-size: 48px; /* Adjust heading size */
+    }
+
+    .hero-content h2 {
+        font-size: 28px; /* Adjust subheading size */
+    }
+
+    .features {
+      
+        flex-direction:row; /* Stack features vertically */
+        padding: 10px;
+    }
+
+    .feature {
+        width: 90%; /* Make features take up more width on smaller screens */
+        margin: 10px 0;
+      
+        
+    }
+
+    #right {
+        margin-left: 470px;
+        padding-left: 0;
+        justify-content: center; /* Center content */
+        padding-bottom: 30px;
+        flex-direction: row;
+    }
+
+    .log {
+        padding: 20px 0;
+    }
+
+    #sign {
+        width: 100%; /* Ensure sign button takes full width */
+        margin-left: 9px;
+        text-align: center;
+    }
+    
+    .lgimg {
+        padding-block: 0;
+        padding-inline: 0;
+        width: 150px; /* Reduce image size */
+        margin-top: 34px;
+    }
+
+
 }
