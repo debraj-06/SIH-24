@@ -19,11 +19,12 @@
     padding: 20px 50px;
     position: fixed; 
     top: 0;
-    width: 100%;
+    width: 200%;
     background-color: #000000; 
     z-index: 1000;
     transition: padding 0.3s ease;
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    height: 50px;
 }
 
 /* Shrink version of the navbar */
@@ -51,7 +52,7 @@ header {
     padding-block: -20px;
     padding-inline: -20px;
     width: 200px;
-    margin-top: 15px;
+    margin-top: 0px;
 }
 
 nav ul {
@@ -389,4 +390,94 @@ nav ul li a.active, nav ul li a:hover {
     }
 
 
+}
+
+/* 3menu bar css */
+/* Style for the three-dot icon */
+/* Hamburger Menu Icon */
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1000;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    margin-top: 10px;
+}
+
+.menu-icon div {
+    width: 35px;
+    height: 5px;
+    background-color: #d9ff00;
+    margin: 6px 0;
+    transition: 0.4s; /* Smooth transition for the bar animation */
+}
+
+/* Rotate the bars to form an X when the menu is active */
+.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0; /* Hide the middle bar */
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Side menu */
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: -250px; /* Start outside the screen */
+    background-color: #000000;
+    overflow-x: hidden;
+    transition: right 0.5s ease, width 0.5s ease;
+    padding-top: 60px;
+    z-index: 999;
+}
+
+/* Links inside the side menu */
+.side-menu a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.5s ease 0.2s;
+}
+
+/* Change color of links on hover */
+.side-menu a:hover {
+    color: #f1f1f1;
+}
+
+/* Open the side menu */
+.side-menu.open {
+    width: 250px;
+    right: 0;
+}
+
+.side-menu.open a {
+    opacity: 1; /* Fade in links */
+}
+
+/* Close button inside the side menu */
+.side-menu .close-btn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 36px;
+    color: white;
+}
+
+/* Style for the close button */
+@media screen and (max-width: 768px) {
+    .side-menu a {
+        font-size: 18px;
+    }
 }

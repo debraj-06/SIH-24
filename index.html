@@ -10,14 +10,14 @@
 <body class="b">
     
     <header>
+        
         <div class="container">
-
         
             <nav>
                 <div class="logo">
                     <img src="newlogo.PNG" class="lgimg" alt="">
                  </div>
-                <ul id="right">
+                <!-- <ul id="right">
                     <li><a href="#" class="active">Home</a></li>
                     <span></span>
                     <li><a href="#">Review</a></li>
@@ -29,8 +29,24 @@
                     <li><a href="#">Contact Us</a></li>
                     <span></span>
                     <a href="login.html"><button id="sign">Sign In</button></a>
-                </ul>
+                </ul> -->
             </nav>
+                <!-- 3menu bar -->
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+    <!-- Side Menu -->
+  
+    <div id="sideMenu" class="side-menu">
+        <a href="#" class="close-btn" onclick="toggleMenu()"></a>
+        <a href="#">Home</a>
+        <a href="#">Review</a>
+        <a href="#">Survey</a>
+        <a href="#">Community</a>
+    </div>
         </div>
     </header>
 
@@ -93,6 +109,10 @@
 
 
     <script src="nav.js"></script>
+
+
+
+
     
 </body>
 </html>
