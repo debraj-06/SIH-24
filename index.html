@@ -32,22 +32,40 @@
                 </ul> -->
             </nav>
                 <!-- 3menu bar -->
-    <div class="menu-icon" onclick="toggleMenu()">
+    <!-- <div class="menu-icon" onclick="toggleMenu()">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
-    </div>
+    </div> -->
 
     <!-- Side Menu -->
-  
+<!--   
     <div id="sideMenu" class="side-menu">
         <a href="#" class="close-btn" onclick="toggleMenu()"></a>
         <a href="#">Home</a>
         <a href="#">Review</a>
         <a href="#">Survey</a>
         <a href="#">Community</a>
+    </div> -->
+    <div class="menu-icon" onclick="toggleMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
     </div>
+    
+    <!-- Side Menu -->
+    <div id="sideMenu" class="side-menu">
+        <a href="#" class="close-btn" onclick="toggleMenu()"></a>
+        <a href="#" class="menu-link" onclick="changeActive(this)">Home</a>
+        <a href="#" class="menu-link" onclick="changeActive(this)">Review</a>
+        <a href="#" class="menu-link" onclick="changeActive(this)">Survey</a>
+        <a href="#" class="menu-link" onclick="changeActive(this)">Community</a>
+        <a href="login.html"><button id="sign">Sign In</button></a>
+    </div>
+    
+    
         </div>
+
     </header>
 
     <section class="hero">
