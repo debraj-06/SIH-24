@@ -40,12 +40,14 @@ header {
 .logo  {
     margin-left: -25px;
     margin-right: 100px;
-    width: 30px;
-    height: 15px;
+    width: 100px;
+    height: 60px;
     margin-left: 10px;
     border-radius: 20px;
     padding-block: 20px;
-    margin-top: -40px;
+    margin-top: -20px;
+    display: flex;
+
 }
 
 .lgimg {
@@ -318,7 +320,8 @@ nav ul li a.active, nav ul li a:hover {
     padding-block: -20px;
     padding-inline: -20px;
     width: 200px;
-    margin-top: 30px;
+    height: 60px;
+    margin-top: 20px;
 }
 }
 
@@ -385,8 +388,9 @@ nav ul li a.active, nav ul li a:hover {
     .lgimg {
         padding-block: 0;
         padding-inline: 0;
-        width: 150px; /* Reduce image size */
-        margin-top: 34px;
+        width: 170px; /* Reduce image size */
+        height: -10px;
+        margin-top: 15px;
     }
 
 
@@ -395,6 +399,7 @@ nav ul li a.active, nav ul li a:hover {
 /* 3menu bar css */
 /* Style for the three-dot icon */
 /* Hamburger Menu Icon */
+/* Menu icon styling */
 .menu-icon {
     display: inline-block;
     cursor: pointer;
@@ -403,6 +408,7 @@ nav ul li a.active, nav ul li a:hover {
     top: 20px;
     right: 20px;
     margin-top: 10px;
+    transition: 0.3s ease-in-out; /* Smooth transition */
 }
 
 .menu-icon div {
@@ -410,19 +416,19 @@ nav ul li a.active, nav ul li a:hover {
     height: 5px;
     background-color: #d9ff00;
     margin: 6px 0;
-    transition: 0.4s; /* Smooth transition for the bar animation */
+    transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
-/* Rotate the bars to form an X when the menu is active */
-.change .bar1 {
+/* Animation for bar transformation into an X */
+.menu-icon.change .bar1 {
     transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .bar2 {
+.menu-icon.change .bar2 {
     opacity: 0; /* Hide the middle bar */
 }
 
-.change .bar3 {
+.menu-icon.change .bar3 {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
@@ -475,9 +481,16 @@ nav ul li a.active, nav ul li a:hover {
     color: white;
 }
 
-/* Style for the close button */
+/* Active link style when clicked */
+.menu-link.active {
+    color: #d9ff00;
+    font-weight: bold;
+}
+
+/* Style for smaller screens */
 @media screen and (max-width: 768px) {
     .side-menu a {
         font-size: 18px;
     }
 }
+
