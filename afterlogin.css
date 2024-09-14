@@ -1,0 +1,496 @@
+.b {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #008080;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+    color: #fff;
+    background: linear-gradient(#008080, rgba(255, 255, 255, 0.5)), url('newback.jpg');
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: fixed; 
+    top: 0;
+    width: 200%;
+    background-color: #000000; 
+    z-index: 1000;
+    transition: padding 0.3s ease;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    height: 50px;
+}
+
+/* Shrink version of the navbar */
+.container.shrink {
+    padding: 10px 50px; 
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+header {
+    background-color: #000000;
+}
+
+.logo  {
+    margin-left: -25px;
+    margin-right: 100px;
+    width: 100px;
+    height: 60px;
+    margin-left: 10px;
+    border-radius: 20px;
+    padding-block: 20px;
+    margin-top: -20px;
+    display: flex;
+
+}
+
+.lgimg {
+    padding-block: -20px;
+    padding-inline: -20px;
+    width: 200px;
+    margin-top: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap; /* Make the navigation wrap on smaller screens */
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: hsl(65, 100%, 50%);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    color: hsl(0, 0%, 100%);
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content h2 {
+    color: #d9ff00;
+    font-size: 48px;
+    margin: 10px;
+    font-family: monaco, Consolas, Lucida Console, monospace;
+    text-shadow: 5px 5px 10px black;
+}
+
+.hero-content h1 {
+    font-family: 'Bahnschrift', sans-serif;
+    font-size: 72px;
+    font-weight: bold;
+    position: relative;
+    padding: 10px 10px;
+    margin: 10px 0;
+    text-shadow: 5px 5px 10px black;
+}
+
+.hero-content .btn {
+    margin: 0 auto;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #2244aa, rgb(4, 38, 107));
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000000;
+    padding: 20px 0;
+    padding-top: 30px;
+    flex-wrap: wrap; /* Allow features to wrap */
+}
+
+.feature {
+    text-align: center;
+    margin: 0 20px;
+    width: 20%;
+    height: 200px;
+    border: 2px solid #00dcec;
+    border-radius: 5px;
+    transition: transform .2s;
+    position: relative;
+}
+
+.feature:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px #00dcec;
+}
+
+.rd {
+    padding: 25px;
+    transition: transform .2s;
+}
+
+.rd:hover {
+    transform: scale(1.2);
+}
+
+.jpg {
+    width: 250px;
+    height: 200px;
+    opacity: 0.5;
+}
+
+.txt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+#userLogo {
+    width: 30px;
+    height: auto;
+}
+
+#right {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 550px;
+    justify-content: left;
+    margin-left: 450px;
+}
+
+.log {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #000000;
+    text-align: center;
+    color: #eeff00;
+}
+
+#sign {
+    background-color: #d0ff00;
+    width: 60px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #00f7ff;
+}
+
+.bkimg {
+    opacity: 0.2;
+    width: 10px;
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px 20px; /* Reduce padding on smaller screens */
+      
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    nav ul {
+        flex-direction: row; /* Stack navigation items vertically */
+        align-items: center;
+    }
+
+    .hero {
+        height: 400px; /* Adjust hero section height */
+    }
+
+    .hero-content h1 {
+        font-size: 48px; /* Reduce heading size */
+    }
+
+    .hero-content h2 {
+        font-size: 24px;
+    }
+
+    .features {
+        flex-direction: column; /* Stack features vertically */
+        padding: 10px;
+    }
+
+    .feature {
+        width: 80%; /* Reduce feature width */
+        margin: 10px 0;
+    }
+
+    #right {
+        padding-left: 0;
+        margin-left: 200px;
+        justify-content: center;
+
+    }
+
+    .log {
+        padding: 20px 0;
+    }
+
+    #sign {
+        width: 100%; /* Make sign button full width on smaller screens */
+        margin-left: 0;
+}
+}
+
+
+
+/* For screens up to 1440px */
+@media screen and (max-width: 1440px) {
+    .container {
+        padding: 5px 40px; /* Slightly increase padding on larger screens */
+        height: 15%;
+    }
+
+    .logo {
+        margin: 20px; /* Center logo on larger screens */
+       margin-top: -30px;
+    }
+
+    nav ul {
+        flex-direction: row; /* Keep navigation items horizontal */
+        justify-content: space-between; /* Spread them out */
+    }
+
+    .hero {
+        height: 600px; /* Increase hero section height for larger screens */
+    }
+
+    .hero-content h1 {
+        font-size: 64px; /* Increase heading size */
+    }
+
+    .hero-content h2 {
+        font-size: 36px;
+    }
+
+    .features {
+        flex-direction: row; /* Align features side by side */
+        padding: 20px;
+    }
+
+    .feature {
+        width: 22%; /* Adjust feature width for a three-column layout */
+        margin: 20px;
+    }
+
+    #right {
+        margin-left: 850px;
+        padding-left: 20px;
+        justify-content: flex-start;
+        padding-bottom: 50px;
+        flex-direction: row;
+    }
+
+    .log {
+        padding: 30px 0;
+    }
+
+    #sign {
+        width: auto; /* Allow sign button to adjust width naturally */
+        margin-left: 20px;
+    }
+    
+.lgimg {
+    padding-block: -20px;
+    padding-inline: -20px;
+    width: 200px;
+    height: 60px;
+    margin-top: 20px;
+}
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 5px 20px; /* Reduce padding for smaller screens */
+        margin-bottom: 100px; /* Adjust height to auto to prevent overflow */
+    }
+
+    .logo {
+        margin: 10px; /* Adjust logo margins for smaller screens */
+        margin-top: -20px;
+    }
+
+    nav ul {
+        flex-direction: row; /* Stack navigation items vertically */
+        justify-content: center;
+        align-items: center; /* Center the navigation items */
+    }
+
+    .hero {
+        height: 400px; /* Reduce hero section height */
+    }
+
+    .hero-content h1 {
+        font-size: 48px; /* Adjust heading size */
+    }
+
+    .hero-content h2 {
+        font-size: 28px; /* Adjust subheading size */
+    }
+
+    .features {
+      
+        flex-direction:row; /* Stack features vertically */
+        padding: 10px;
+    }
+
+    .feature {
+        width: 90%; /* Make features take up more width on smaller screens */
+        margin: 10px 0;
+      
+        
+    }
+
+    #right {
+        margin-left: 470px;
+        padding-left: 0;
+        justify-content: center; /* Center content */
+        padding-bottom: 30px;
+        flex-direction: row;
+    }
+
+    .log {
+        padding: 20px 0;
+    }
+
+    #sign {
+        width: 100%; /* Ensure sign button takes full width */
+        margin-left: 9px;
+        text-align: center;
+    }
+    
+    .lgimg {
+        padding-block: 0;
+        padding-inline: 0;
+        width: 170px; /* Reduce image size */
+        height: -10px;
+        margin-top: 15px;
+    }
+
+
+}
+
+/* 3menu bar css */
+/* Style for the three-dot icon */
+/* Hamburger Menu Icon */
+/* Menu icon styling */
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1000;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    margin-top: 10px;
+    transition: 0.3s ease-in-out; /* Smooth transition */
+}
+
+.menu-icon div {
+    width: 35px;
+    height: 5px;
+    background-color: #d9ff00;
+    margin: 6px 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Animation for bar transformation into an X */
+.menu-icon.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.menu-icon.change .bar2 {
+    opacity: 0; /* Hide the middle bar */
+}
+
+.menu-icon.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Side menu */
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: -250px; /* Start outside the screen */
+    background-color: #000000;
+    overflow-x: hidden;
+    transition: right 0.5s ease, width 0.5s ease;
+    padding-top: 60px;
+    z-index: 999;
+}
+
+/* Links inside the side menu */
+.side-menu a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.5s ease 0.2s;
+}
+
+/* Change color of links on hover */
+.side-menu a:hover {
+    color: #f1f1f1;
+}
+
+/* Open the side menu */
+.side-menu.open {
+    width: 250px;
+    right: 0;
+}
+
+.side-menu.open a {
+    opacity: 1; /* Fade in links */
+}
+
+/* Close button inside the side menu */
+.side-menu .close-btn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 36px;
+    color: white;
+}
+
+/* Active link style when clicked */
+.menu-link.active {
+    color: #d9ff00;
+    font-weight: bold;
+}
+
+/* Style for smaller screens */
+@media screen and (max-width: 768px) {
+    .side-menu a {
+        font-size: 18px;
+    }
+}
+
