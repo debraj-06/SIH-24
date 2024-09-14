@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (data._id) {
                 // Handle successful login (Redirect or show message)
                 alert('Login successful!');
-                window.location.href = 'loginmaint.html';
+                window.location.href = 'afterlogin.html';
             } else {
                 // Handle login error
                 alert('Login failed: ' + data.message);
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (data) {
                     // Handle successful registration (Redirect or show message)
                     alert('Registration successful!');
-                    window.location.href = 'loginmaint.html';
+                    window.location.href = 'login.html';
                 } else {
                     // Handle registration error
                     alert('Registration failed: ' + data.message);
