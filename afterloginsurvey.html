@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Specific Sports Survey</title>
+  <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    
+    <header>
+        
+        <div class="navy">
+        
+            <nav>
+                <div class="logo">
+                    <img src="newlogo.PNG" class="lgimg" alt="">
+                 </div>
+                <!-- <ul id="right">
+                    <li><a href="#" class="active">Home</a></li>
+                    <span></span>
+                    <li><a href="#">Review</a></li>
+                    <span></span>
+                    <li><a href="#">Community</a></li>
+                    <span></span>
+                    <li><a href="#">Survey</a></li>
+                    <span></span>
+                    <li><a href="#">Contact Us</a></li>
+                    <span></span>
+                    <a href="login.html"><button id="sign">Sign In</button></a>
+                </ul> -->
+            </nav>
+                <!-- 3menu bar -->
+    <!-- <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div> -->
+
+    <!-- Side Menu -->
+<!--   
+    <div id="sideMenu" class="side-menu">
+        <a href="#" class="close-btn" onclick="toggleMenu()"></a>
+        <a href="#">Home</a>
+        <a href="#">Review</a>
+        <a href="#">Survey</a>
+        <a href="#">Community</a>
+    </div> -->
+    <div class="menu-icon" onclick="toggleMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    
+    <!-- Side Menu -->
+    <div id="sideMenu" class="side-menu">
+        <a href="#" class="close-btn" onclick="toggleMenu()"></a>
+        <a href="index.html" class="menu-link" onclick="changeActive(this)">Home</a>
+        <a href="#" class="menu-link" onclick="changeActive(this)">Review</a>
+        <a href="survey.html" class="menu-link" onclick="changeActive(this)">Survey</a>
+        <a href="#" class="menu-link" onclick="changeActive(this)">Community</a>
+        <a href="index.html"><button id="sign" onclick="surveysignOut()">Sign Out</button></a>
+    </div>
+    
+    
+        </div>
+
+    </header>
+
+  <div class="container">
+    <h2>Specific Sports Survey</h2>
+
+    <p>Please rate your following stats from 1 to 5:</p>
+    <form id="sports-survey">
+      <label>Endurance (1-5):</label>
+      <input type="number" id="endurance" min="1" max="5" required>
+      <span id="endurance-warning" class="warning"></span><br><br>
+      
+      <label>Agility (1-5):</label>
+      <input type="number" id="agility" min="1" max="5" required>
+      <span id="agility-warning" class="warning"></span><br><br>
+
+      <label>Speed (1-5):</label>
+      <input type="number" id="speed" min="1" max="5" required>
+      <span id="speed-warning" class="warning"></span><br><br>
+
+      <label>Explosive Power (1-5):</label>
+      <input type="number" id="power" min="1" max="5" required>
+      <span id="power-warning" class="warning"></span><br><br>
+
+      <label>Strength (1-5):</label>
+      <input type="number" id="strength" min="1" max="5" required>
+      <span id="strength-warning" class="warning"></span><br><br>
+
+      <label>Tactical Awareness (1-5):</label>
+      <input type="number" id="awareness" min="1" max="5" required>
+      <span id="awareness-warning" class="warning"></span><br><br>
+
+      <label>Hand-Eye Coordination (1-5):</label>
+      <input type="number" id="coordination" min="1" max="5" required>
+      <span id="coordination-warning" class="warning"></span><br><br>
+
+      <label>Focus (1-5):</label>
+      <input type="number" id="focus" min="1" max="5" required>
+      <span id="focus-warning" class="warning"></span><br><br>
+
+      <label>Reflexes (1-5):</label>
+      <input type="number" id="reflexes" min="1" max="5" required>
+      <span id="reflexes-warning" class="warning"></span><br><br>
+
+      <label>Teamwork (1-5):</label>
+      <input type="number" id="teamwork" min="1" max="5" required>
+      <span id="teamwork-warning" class="warning"></span><br><br>
+
+      <button type="button" onclick="validateAndCalculateSport()">Submit</button>
+    </form>
+
+    <h3 id="result"></h3>
+    <div id="rankings"></div>
+  </div>
+
+  <script src="survey.js"></script>
+  <script src="afterlogin.js"></script>
+</body>
+</html>

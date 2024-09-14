@@ -2,3 +2,6 @@
 function signOut() {
     alert("Log out successful");
 }
+function surveysignOut() {
+    alert("Log out successful");
+}
