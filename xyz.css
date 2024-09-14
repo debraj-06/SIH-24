@@ -295,7 +295,7 @@ nav ul li a.active, nav ul li a:hover {
     }
 
     .feature {
-        width: 30%; /* Adjust feature width for a three-column layout */
+        width: 22%; /* Adjust feature width for a three-column layout */
         margin: 20px;
     }
 
