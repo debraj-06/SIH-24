@@ -169,3 +169,14 @@
     
  }
  
+ #survey-link{
+    color:#d0ff00;
+    justify-content: space-between;
+    margin:50px;
+    text-decoration: none;
+ }
+ #survey-link:hover{
+    color: #ffffff;
+   
+ }
+ 

@@ -5,3 +5,5 @@ function signOut() {
 function surveysignOut() {
     alert("Log out successful");
 }
+
+
