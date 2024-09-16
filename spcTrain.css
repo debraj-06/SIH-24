@@ -8,44 +8,64 @@
 /* Body and Main */
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(0, 163, 131); /* Teal color */
+    /* background-color: rgba(0, 255, 204, 0); */
     color: #fff;
     line-height: 1.6;
 }
 
+/* Main Content */
 main {
     padding: 20px;
     text-align: center;
 }
 
+/* Box Container with Grid Layout */
 .box-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px; /* Increased space between boxes */
-    margin-top: 20px; /* Space above the boxes */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 15px; /* Space between boxes */
+    position: relative; /* Relative to place over the background */
+    z-index: 2; /* Set higher than background */
 }
 
+/* Styling Each Box */
 .box {
-    width: 250px; /* Increased width */
-    height: 150px; /* Increased height */
-    background-color: #000; /* Black color */
-    color: #fff; /* White text color */
+    width: 250px;
+    height: 150px;
+    background-color: #000;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px; /* Adjusted font size */
-    font-weight: bold; /* Bold text */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect */
-    border-radius: 5px; /* Optional: rounded corners */
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
 }
+
 .box a {
-    color: #fff; /* White text color for links */
-    text-decoration: none; /* Remove underline from links */
+    color: #fff;
+    text-decoration: none;
 }
+
+.jpeg, .jpg {
+    width: 250px;
+    height: 140px;
+    opacity: 0.7;
+}
+
+/* Text Over Images */
+.txt, .bskt {
+    position: relative;
+    margin-top: -40px;
+    z-index: 2;
+    color: white;
+}
+
 /* Header and Navbar */
 header {
-    background-color: #000; /* Black color */
+    background-color: #000;
     padding: 10px 0;
 }
 
@@ -56,6 +76,35 @@ nav {
 }
 
 nav h1 {
-    color: #fff;
-    font-size: 24px;
+    color: #e9ec0b;
+    font-size: 24px;
+}
+
+/* Background Image Styling */
+.backimg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.backimg {
+    margin-top: 55px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire background */
+    /* opacity: 0.7; */
+}
+
+/* Box Section */
+.ft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    z-index: 2;
 }
