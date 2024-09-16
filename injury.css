@@ -1,0 +1,55 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Main Content Section (Teal background) */
+.main-content {
+    background-color: rgb(0, 163, 131);
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Box Container with Grid Layout */
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 equal rows */
+    gap: 20px; /* Space between boxes */
+    width: 80vw; /* 80% of the viewport width */
+    height: 80vh; /* 80% of the viewport height */
+}
+
+/* Styling Each Box */
+.box {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255); /* White text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow for effect */
+    text-align: center; /* Center text horizontally */
+}
+
+/* Ensure white color for links inside box */
+.box a {
+    color: white; /* White text for anchor tags */
+    text-decoration: none; /* Remove underline */
+}
