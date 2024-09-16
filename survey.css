@@ -1,182 +1,182 @@
 /* Reset margins and paddings for consistency */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Full height and background color for body */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #009688; /* Teal background color */
-    color: #333;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  /* Navbar styling */
-  .navbar {
-    background-color: #000; /* Black background for navbar */
-    color: #dcf903;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-  }
-  
-  .navbar-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-  }
-  
-  .navbar .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .navbar nav ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  .navbar nav ul li {
-    margin-left: 20px;
-  }
-  
-  .navbar nav ul li a {
-    color: #d0ff00;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  .navbar nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Container styling */
-  .container {
-    background-color: #000000; /* Teal background for container */
-    color: #fff; /* White text color */
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    width: 100%;
-    transition: transform .2s;
-    text-align: center;
-    margin: 80px auto 0; /* Adjusted margin to account for fixed navbar */
-  }
-  .navy{
-    background-color: #000000; /* Teal background for container */
-    color: #fff; /* White text color */
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* max-width: 600px; */
-    width: 100%;
-    text-align: center;
-    /* margin: 80px auto 0; Adjusted margin to account for fixed navbar */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  }
-  
-  /* Form styling */
-  form {
-    display: inline-block;
-    margin: 20px 0;
-    text-align: center;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 10px;
-    color: #fff; /* White text color for labels */
-  }
-  
-  input[type="number"] {
-    width: 60px;
-    padding: 5px;
-    text-align: center;
-    background-color: #004d40; /* Teal background for inputs */
-    color: #fff; /* White text color for inputs */
-    border: 1px solid #fff; /* White border for inputs */
-  }
-  
-  button {
-    background-color: #d1ff06; /* Slightly lighter teal for button */
-    color: rgb(0, 0, 0);
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  button:hover {
-    background-color: #004d40; /* Darker teal for button hover */
-  }
-  
-  #result {
-    margin-top: 20px;
-    color: #FFD700; /* Yellow color for result */
-  }
-  
-  #rankings {
-    margin-top: 20px;
-    text-align: center;
-    color: #fff; /* White text color for rankings */
-  }
-  
-  #rankings p {
-    text-align: left;
-  }
+/* Full height and background color for body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #00caca; /* Teal background color */
+  color: #333;
+  height: 100vh;
+  margin: 0;
+}
 
-  /* Existing CSS code... */
+
+/* Navbar styling */
+.navbar {
+  background-color: #000; /* Black background for navbar */
+  color: #dcf903;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar nav ul li {
+  margin-left: 20px;
+}
+
+.navbar nav ul li a {
+  color: #d0ff00;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Container styling */
+.container {
+  background-color: #000000; /* Teal background for container */
+  color: #fff; /* White text color */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  transition: transform .2s;
+  text-align: center;
+  margin: 80px auto 0; /* Adjusted margin to account for fixed navbar */
+}
+.navy{
+  background-color: #000000; /* Teal background for container */
+  color: #fff; /* White text color */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* max-width: 600px; */
+  width: 100%;
+  text-align: center;
+  /* margin: 80px auto 0; Adjusted margin to account for fixed navbar */
+
+}
+
+/* Form styling */
+form {
+  display: inline-block;
+  margin: 20px 0;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #fff; /* White text color for labels */
+}
+
+input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  text-align: center;
+  background-color: #004d40; /* Teal background for inputs */
+  color: #fff; /* White text color for inputs */
+  border: 1px solid #fff; /* White border for inputs */
+}
+
+button {
+  background-color: #d1ff06; /* Slightly lighter teal for button */
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #004d40; /* Darker teal for button hover */
+}
+
+#result {
+  margin-top: 20px;
+  color: #FFD700; /* Yellow color for result */
+}
+
+#rankings {
+  margin-top: 20px;
+  text-align: center;
+  color: #fff; /* White text color for rankings */
+}
+
+#rankings p {
+  text-align: left;
+}
+
+/* Existing CSS code... */
 
 /* Existing CSS code... */
 
 /* Warning styles */
 .warning {
-    color: #ff0000; /* Red color for warning text */
-    font-size: 12px;
-    display: block; /* Ensures warning appears below input field */
-    margin-top: 5px;
-  }
+  color: #ff0000; /* Red color for warning text */
+  font-size: 12px;
+  display: block; /* Ensures warning appears below input field */
+  margin-top: 5px;
+}
+
+/* Invalid input styles */
+input.invalid {
+  border: 1px solid #ff0000; /* Red border for invalid inputs */
+  background-color: #080000; /* Light red background for invalid inputs */
+}
+.menu-link{
+  color:#ffffff;
+  justify-content: space-between;
+  margin:50px;
+  text-decoration: none;
+}
+.menu-link:hover{
+  color: #d0ff00;
+ 
+}
+.container:hover{
+    transform: scale(1.03);
+      box-shadow: 0 5px 15px #000000;
   
-  /* Invalid input styles */
-  input.invalid {
-    border: 1px solid #ff0000; /* Red border for invalid inputs */
-    background-color: #080000; /* Light red background for invalid inputs */
-  }
-  .menu-link{
-    color:#ffffff;
-    justify-content: space-between;
-    margin:50px;
-    text-decoration: none;
-  }
- .menu-link:hover{
-    color: #d0ff00;
-   
- }
- .container:hover{
-      transform: scale(1.03);
-        box-shadow: 0 5px 15px #000000;
-    
- }
+}
+
+#survey-link{
+  color:#d0ff00;
+  justify-content: space-between;
+  margin:50px;
+  text-decoration: none;
+}
+#survey-link:hover{
+  color: #ffffff;
  
- #survey-link{
-    color:#d0ff00;
-    justify-content: space-between;
-    margin:50px;
-    text-decoration: none;
- }
- #survey-link:hover{
-    color: #ffffff;
-   
- }
- 
+}
