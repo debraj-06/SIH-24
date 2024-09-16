@@ -1,0 +1,77 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling with Full-Background Image */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('workoutback.jpg'); /* Full background image */
+    background-size: cover; /* Cover the whole page */
+    background-position: center; /* Center the background */
+    background-repeat: no-repeat; /* No repeat */
+    background-attachment: fixed; /* Keep the background fixed while scrolling */
+    min-height: 100vh; /* Ensure full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Container for boxes */
+.container {
+    display: flex;
+    justify-content: space-around; /* Distribute boxes evenly */
+    flex-wrap: wrap; /* Wrap boxes to new lines on smaller screens */
+    padding: 40px 20px; /* Add padding around the container */
+}
+
+/* Box Styling */
+.box {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: white;
+    width: 250px;
+    height: 350px;
+    border-radius: 15px; /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+    margin: 20px; /* Space between the boxes */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.box:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Image Styling Inside the Box */
+.box img {
+    max-width: 100%; /* Ensure the image doesn't overflow the box */
+    max-height: 60%; /* Keep the image height relative to the box */
+    object-fit: contain; /* Ensure the image fits well */
+    border-radius: 10px; /* Rounded corners for the image */
+    margin-bottom: 10px; /* Space between the image and text */
+}
+
+/* Link Styling */
+.box a {
+    color: white;
+    text-decoration: none; /* Remove underline from the links */
+}
