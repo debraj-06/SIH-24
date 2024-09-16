@@ -13,15 +13,32 @@
     padding: 20px;
     font-size: 24px;
     font-weight: bold;
+   
 }
 
-/* Main Content Section (Teal background) */
+/* Main Content Section */
 .main-content {
-    background-color: rgb(0, 163, 131);
-    height: 100vh; /* Full height of the viewport */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative; /* Make content relative to position boxes */
+    height: 100vh;
+}
+
+/* Background Image Container */
+.backimg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Put background behind other elements */
+}
+
+.backimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* Box Container with Grid Layout */
@@ -32,24 +49,47 @@
     gap: 20px; /* Space between boxes */
     width: 80vw; /* 80% of the viewport width */
     height: 80vh; /* 80% of the viewport height */
+    margin: auto;
+    z-index: 1; /* Place above background */
+    position: relative;
 }
 
 /* Styling Each Box */
 .box {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255); /* White text color */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    color: white; /* White text color */
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Stack image above text */
+    justify-content: space-between; /* Distribute space between image and text */
     align-items: center;
-    font-size: 24px; /* Larger font size */
+    font-size: 20px; /* Adjusted font size */
     font-weight: bold; /* Bold text */
     border-radius: 10px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow for effect */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    padding: 10px; /* Add padding for spacing */
     text-align: center; /* Center text horizontally */
+}
+
+/* Box Image Styling */
+.box-image {
+    width: 100%;
+    height: 70%; /* Adjust height to fit within box */
+    object-fit: cover; /* Ensure image covers the box without distortion */
+    border-radius: 10px;
 }
 
 /* Ensure white color for links inside box */
 .box a {
     color: white; /* White text for anchor tags */
     text-decoration: none; /* Remove underline */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Style for Text Inside the Box */
+.box div {
+    margin-top: 10px; /* Space between image and text */
 }
