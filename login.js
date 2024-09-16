@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // Send a POST request to the API for login
-            const response = await fetch('http://localhost:5000/api/sih/login', {
+            const response = await fetch('https://sih-24-7.onrender.com/api/sih/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
             try {
                 // Send a POST request to the API for registration
-                const response = await fetch('http://localhost:5000/api/sih', { // Assuming /register endpoint
+                const response = await fetch('https://sih-24-7.onrender.com/api/sih', { // Assuming /register endpoint
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
